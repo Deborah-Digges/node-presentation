@@ -138,6 +138,42 @@ db.executeQuery("SELECT name FROM Customers WHERE id=1", function(result, error)
       <a href="http://exploringdata.github.io/vis/npm-packages-dependencies/">Link to Visualization</a>
     </section>
 
+    <section class="slide">
+      <h2><p>What is Node.js Not Good At?</p></h2>
+      
+      <p class="slide">
+          <h3>CPU Intensive tasks</h3>
+          <p>&nbsp;</p>
+      </p>
+      <p class="slide">
+        <pre>
+          <code>
+var http = require('http');
+
+var server = http.createServer(function(request, response) {
+    console.log('Request received');
+
+    // Long CPU operation
+    for(var i=0; i<100000000; i+=1){
+        console.log(i);
+    }
+
+    // After which response is sent
+    response.write(200, {"Content-Type": "text/html"});
+    response.write("hello");
+    response.end();
+});
+
+server.listen(1256);
+          </code>
+        </pre>
+      </p>
+      
+      <a>Demo</a>
+    </section>
+
+    
+
     <!-- deck.navigation snippet -->
     <div aria-role="navigation">
       <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
@@ -149,7 +185,7 @@ db.executeQuery("SELECT name FROM Customers WHERE id=1", function(result, error)
       <span class="deck-status-current"></span>
       /
       <span class="deck-status-total"></span>
-    </p>
+    </p>se
 
     <!-- deck.goto snippet -->
     <form action="." method="get" class="goto-form">
