@@ -14,23 +14,23 @@
   <meta name="viewport" content="width=1024, user-scalable=no">
 
   <!-- Core and extension CSS files -->
-  <link rel="stylesheet" media="screen" href="../core/deck.core.css">
-  <link rel="stylesheet" media="screen" href="../extensions/goto/deck.goto.css">
-  <link rel="stylesheet" media="screen" href="../extensions/menu/deck.menu.css">
-  <link rel="stylesheet" media="screen" href="../extensions/navigation/deck.navigation.css">
-  <link rel="stylesheet" media="screen" href="../extensions/status/deck.status.css">
-  <link rel="stylesheet" media="screen" href="../extensions/scale/deck.scale.css">
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
 
   <!-- Style theme. More available in /themes/style/ or create your own. -->
-  <link rel="stylesheet" media="screen" href="../themes/style/swiss.css">
+  <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
 
   <!-- Transition theme. More available in /themes/transition/ or create your own. -->
-  <link rel="stylesheet" media="screen" href="../themes/transition/horizontal-slide.css">
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
 
   <!-- Basic black and white print styles -->
-  <link rel="stylesheet" media="print" href="../core/print.css">
+  <link rel="stylesheet" media="print" href="core/print.css">
 
-  <script src="../modernizr.custom.js"></script>
+  <script src="modernizr.custom.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
 
     <!-- Begin slides -->
     <section class="slide" >
-      <h1>Getting Started with <img src="images/nodejs.png"></img></h1>
+    <h1>Getting Started with <img src="images/nodejs.png"></img></h1>
       
     </section>
 
@@ -141,11 +141,11 @@ db.executeQuery("SELECT name FROM Customers WHERE id=1", function(result, error)
     <section class="slide">
       <h2><p>What is Node.js Not Good At?</p></h2>
       
-      <p class="slide">
+      <p>
           <h3>CPU Intensive tasks</h3>
           <p>&nbsp;</p>
       </p>
-      <p class="slide">
+      <p>
         <pre>
           <code>
 var http = require('http');
@@ -179,17 +179,15 @@ server.listen(1256);
     </section>
 
     <section class="slide">
-      <img style="float:left;" src="images/uber.png"/>
-      <img style="clear:both;" src="images/uber-node.jpg"/>
+    <img style="float:left;" src="images/uber.png"/>
+    <img style="clear:both;" src="images/uber-node.jpg"/>
     </section>
 
     <section class="slide">
       <h2><p>And many more</p><h2>
-      
         <p><img src="images/paypal.png"><p>
         <p><img src="images/groupon.jpeg"></p>
-        <p><img src="images/flickr.png"></p>
-      
+        <p><img src="images/flickr.png"></p>      
     </section>
 
     <!-- deck.navigation snippet -->
@@ -214,15 +212,15 @@ server.listen(1256);
     </form>
   </div>
 
-<script src="../jquery.min.js"></script>
+<script src="./jquery.min.js"></script>
 
 <!-- Deck Core and extensions -->
-<script src="../core/deck.core.js"></script>
-<script src="../extensions/menu/deck.menu.js"></script>
-<script src="../extensions/goto/deck.goto.js"></script>
-<script src="../extensions/status/deck.status.js"></script>
-<script src="../extensions/navigation/deck.navigation.js"></script>
-<script src="../extensions/scale/deck.scale.js"></script>
+<script src="core/deck.core.js"></script>
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
 
 <!-- Initialize the deck -->
 <script>
