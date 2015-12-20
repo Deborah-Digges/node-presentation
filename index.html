@@ -37,12 +37,12 @@
   <div class="deck-container">
 
     <!-- Begin slides -->
-    <section class="slide" id="title-slide">
+    <section class="slide" >
       <h1>Getting Started with <img src="images/nodejs.png"></img></h1>
       
     </section>
 
-    <section class="slide" id="how-to-overview">
+    <section class="slide" >
       <h2>What we are going to cover</h2>
       <ol>
         <li class="slide">
@@ -60,20 +60,26 @@
       </ol>
     </section>
 
-    <section class="slide" id="quick-start">
+    <section class="slide" >
       <h2>What is Node.js?</h2>
       <ul>
-        <div ><li class="slide"><h4>Javascript runtime built on v8</h4></li></div>
-        <div><li class="slide"><h4>Event Driven Non blocking I/O Model</h4></li></div>
+        <li class="slide">
+          <h3>Javascript runtime built on v8</h4>
+          <p>&nbsp;</p>
+        </li>
+        <li class="slide">
+          <h3>Implements Event Driven Non blocking I/O Model</h4>
+          <p>&nbsp;</p>
+        </li>
       </ul>
     </section>
 
-    <section class="slide">
+    <section class="slide" >
         <h2>How we are used to doing I/O</h2>
 
         <pre>
             <code>
-result = stmt.executeQuery("SELECT Lname FROM Customers WHERE Snum = 2001");
+result = db.executeQuery("SELECT name FROM Customers WHERE id=1");
 
 // Wait for result
 
@@ -82,23 +88,54 @@ result = stmt.executeQuery("SELECT Lname FROM Customers WHERE Snum = 2001");
         </pre>
     </section>
 
-    <section class="slide" id="markup">
+    <section class="slide" >
       <h2><p>The Traditional Model</p></h2>
       <img src="images/threading_java.png"/>
     </section>
 
-    <section class="slide" id="markup">
+    <section class="slide" >
+        <h2>How Node does I/O</h2>
+
+        <pre>
+            <code>
+db.executeQuery("SELECT name FROM Customers WHERE id=1", function(result, error){
+        // Do something with the result
+    });
+            </code>
+        </pre>
+    </section>
+
+    <section class="slide">
       <h2><p>The Node Model</p></h2>
       <img src="images/threading_node.png"/>
     </section>
 
-    <section class="slide" id="themes">
-      <h2>Style Themes</h2>
-      <p>Customizes the colors, typography, and layout of slide&nbsp;content.</p>
-      <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/css/style-theme.css&quot;&gt;</code></pre>
-      <h2>Transition Themes</h2>
-      <p>Defines transitions between slides using CSS3 transitions.  Less capable browsers fall back to cutaways. But <strong>you</strong> aren&rsquo;t using <em>those</em> browsers to give your presentations, are&nbsp;you&hellip;</p>
-      <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/css/transition-theme.css&quot;&gt;</code></pre>
+    <section class="slide">
+      <h2><p>What is Node.js Good At?</p></h2>
+      <ol>
+        <li class="slide">
+          <h3>IO Intensive tasks</h3>
+          <p>&nbsp;</p>
+        </li>
+        <li class="slide">
+          <h3>High Concurrency</h3>
+          <p>&nbsp;</p>
+        </li>
+        <li class="slide">
+          <h3>Low resource</h3>
+          <p>&nbsp;</p>
+        </li>
+        <li class="slide">
+          <h3>Reusing code across the client and server</h3>
+          <p>&nbsp;</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h2><p>The Node.js Ecosystem</p></h2>
+      <img src="images/ecosystem.png"/>
+      <a href="http://exploringdata.github.io/vis/npm-packages-dependencies/">Link to Visualization</a>
     </section>
 
     <section class="slide" id="extensions">
