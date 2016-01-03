@@ -31,6 +31,26 @@
   <link rel="stylesheet" media="print" href="core/print.css">
 
   <script src="modernizr.custom.js"></script>
+  <style type="text/css">
+      .blockquote {
+      background: #f9f9f9;
+      border-left: 10px solid #ccc;
+      margin: 1.5em 10px;
+      padding: 0.5em 10px;
+      quotes: "\201C""\201D""\2018""\2019";
+    }
+    .blockquote:before {
+      color: #ccc;
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+    .blockquote p {
+      display: inline;
+    }
+  </style>
 </head>
 
 <body>
@@ -176,6 +196,7 @@ server.listen(1256);
       <h2><p>Who is using Node.js?</p></h2>
       <img style="float: left;" src="images/linkedin.png"/>
       <img style="clear:both;" src="images/linkedin-node.png">
+      <p class="blockquote p">The thing it’s best at doing is talking to other services. The mobile app has to talk to our platform API and database. – LinkedIn’s mobile development lead Kiran Prasad</p>
     </section>
 
     <section class="slide">
